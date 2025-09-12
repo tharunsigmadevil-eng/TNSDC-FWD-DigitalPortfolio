@@ -15,38 +15,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <h1 class="cursive">Hi, I'm Tharun</h1>
-    <p class="cursive">Web Developer | Designer | Coder</p>
-    <button onclick="showMessage()">Say Hello 👋</button>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="about">
-    <h2 class="cursive">About Me</h2>
-    <p class="cursive">
-      I’m a passionate web developer who loves building colorful, creative, and modern websites.
-    </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <a href="https://imgbb.com/">
+  <img src="https://i.ibb.co/pBWB0j0y/Untitled-2-copy.jpg" 
+       alt="Profile" 
+       class="circle-img">
+</a>
+    <h2>Hello, I'm <span class="highlight">Tharun <br>portfolio</span></h2>
+    <p>A Passionate Web Developer & Designer</p>
+    <button onclick="scrollToSection('projects')">View My Work</button>
   </section>
 
-  <section class="projects">
-    <h2 class="cursive">My Projects</h2>
-    <div class="project-card">
-      <h3 class="cursive">Portfolio Website</h3>
-      <p class="cursive">A personal portfolio with stylish design.</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a creative developer who loves to design animated and unique websites with modern styles. My focus is on building attractive, responsive, and user-friendly interfaces.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Java</div>
     </div>
-    <div class="project-card">
-      <h3 class="cursive">E-commerce Store</h3>
-      <p class="cursive">An online shop built with modern UI.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">Portfolio Website</div>
+      <div class="project-card">E-Commerce App</div>
+      <div class="project-card">Blog Design</div>
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p class="cursive">© 2025 Tharun | All rights reserved</p>
+    <p>© 2025 My Portfolio. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
 <!-- partial -->
